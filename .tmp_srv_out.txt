@@ -1,0 +1,2 @@
+◇ injected env (0) from .env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+◇ injected env (2) from gigachat.env // tip: ⌘ suppress logs { quiet: true }

@@ -1,0 +1,25 @@
+{
+  "name": "amurcode-budget-selector",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Конструктор аналитических выборок для бюджетного процесса (БФТ / Минфин АО). MVP для хакатона.",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.6",
+    "dotenv": "^17.4.2",
+    "exceljs": "^4.4.0",
+    "express": "^4.21.2",
+    "gigachat": "^0.0.20",
+    "helmet": "^8.1.0",
+    "multer": "^2.1.1",
+    "xlsx": "^0.18.5"
+  }
+}

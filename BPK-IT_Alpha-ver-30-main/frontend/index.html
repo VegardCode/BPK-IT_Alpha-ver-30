@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Конструктор аналитических выборок · Минфин АО</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:  '#e8f0fe',
+              100: '#d2e3fc',
+              200: '#aecbfa',
+              300: '#8ab4f8',
+              400: '#669df6',
+              500: '#4285f4',
+              600: '#3367d6',
+              700: '#1967d2',
+              800: '#185abc',
+              900: '#174ea6',
+            }
+          },
+          boxShadow: {
+            'panel': '0 1px 2px rgba(60,64,67,.08), 0 2px 12px rgba(60,64,67,.06)',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/vue@3.4.27/dist/vue.global.prod.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.js"></script>
+  <script>
+    window.__APP_CONFIG__ = {
+      // Пустая база = тот же origin, что и backend (без CORS/дубля хостов).
+      apiBase: '',
+    };
+  </script>
+</head>
+<body class="app-body text-[#202124] antialiased">
+  <div id="app"></div>
+  <script type="module" src="./app.js?v=realtime-data-1"></script>
+</body>
+</html>
